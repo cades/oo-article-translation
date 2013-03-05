@@ -48,12 +48,12 @@ It is in this context that we will describe our perspective on object design, it
 就像我們在把物件的合作文件化時的早期工作[[4]](#ref4)，CRC卡同時明確地表示多個物件。然而，與其僅僅追蹤在發送訊息(message sending)的形式上的合作細節，CRC卡藉由把（潛在的）許多訊息用英文片語表示出來，把設計師的注意力集中在合作的動機之上。  
   
 ![](http://c2.com/doc/oopsla89/fig1.gif)  
-圖一：一張「類別－責任－合作對象(CRC)」索引卡
+_圖一：一張「類別－責任－合作對象(CRC)」索引卡_
   
 在使用它們時，一個物件的一切資訊都寫在一張4英吋乘以6英吋的索引卡上（譯註：等於10.16公分 x 15.24公分, 恰恰是一張明信片的大小）。這種卡片的優點是它很便宜、方便攜帶、容易取得且常見。圖一是一張理想的卡片。類別名稱帶著下劃線放在左上角；其下是責任列表，占卡片左邊的三分之二；而合作對象列表放在右邊的三分之一。
 
 ![](http://c2.com/doc/oopsla89/fig2.gif)   
-圖二：CRC卡描述Smalltalk的Model, View和Controller的責任與合作對象。
+_圖二：CRC卡描述Smalltalk的Model, View和Controller的責任與合作對象。_
 
 圖二秀出一個從Smalltalk-80借來的例子，那個被誤解甚深的model-view-controller使用者介面框架。我們謹慎地只秀出一部分的責任each of these objects assumes for clarity of exposition. 注意到View和Controller的卡片重疊（暗示密切合作），而且放在Model的上方（暗示監督）。我們發現這些以及其他非正式的分群有益於理解設計。例如部分通常放在全體的下方。又，一個個抽象的精鍊可以被收集起來集中成一疊，其中最抽象的卡片放在最上面，代表其餘的卡片。  
   
